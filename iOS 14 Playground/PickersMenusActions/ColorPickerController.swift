@@ -25,46 +25,25 @@ final class ColorPickerController: UIViewController, UIColorPickerViewController
 
     // MARK: - Controls
 
-    lazy var outerStackView: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [switchStack, showButton])
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.spacing = 16.0
-        stack.axis = .vertical
-        return stack
-    }()
+    lazy var outerStackView = UIStackView.vertical([switchStack, showButton])
 
-    lazy var switchStack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [alphaLabel, alphaSwitch])
-        stack.spacing = 16.0
-        stack.axis = .horizontal
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        return stack
-    }()
+    lazy var switchStack = UIStackView.horizontal([alphaLabel, alphaSwitch])
 
-    lazy var alphaLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Picker supports alpha"
-        return label
-    }()
+    lazy var showButton = autolayoutNew(UIButton(type: .system)) {
+        $0.setTitle("Show Color Picker", for: .normal)
+        $0.addTarget(self, action: #selector(showColorPicker), for: .touchUpInside)
+    }
 
-    lazy var showButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Show Color Picker", for: .normal)
-        button.addTarget(self, action: #selector(showColorPicker), for: .touchUpInside)
-        return button
-    }()
+    // MARK: - Alpha Switch
 
-    // MARK: - Switch
+    lazy var alphaSwitch = autolayoutNew(UISwitch()) {
+        $0.isOn = true
+        $0.addTarget(self, action: #selector(switchToggled), for: .valueChanged)
+    }
 
-    lazy var alphaSwitch: UISwitch = {
-        let s = UISwitch()
-        s.translatesAutoresizingMaskIntoConstraints = false
-        s.isOn = true
-        s.addTarget(self, action: #selector(switchToggled), for: .valueChanged)
-        return s
-    }()
+    lazy var alphaLabel = autolayoutNew(UILabel()) {
+        $0.text = "Picker supports alpha"
+    }
 
     @objc func switchToggled() {
         colorPicker.supportsAlpha = alphaSwitch.isOn

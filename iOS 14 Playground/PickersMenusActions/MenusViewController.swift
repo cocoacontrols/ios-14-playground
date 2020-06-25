@@ -19,11 +19,11 @@ final class MenusViewController: UIViewController {
         barButtonItem.menu = buildMenu()
         navigationItem.rightBarButtonItem = barButtonItem
 
-        let button = UIButton(type: .system)
-        button.menu = buildMenu()
-        button.showsMenuAsPrimaryAction = true
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setImage(ellipsisImage, for: .normal)
+        let button = autolayoutNew(UIButton(type: .system)) {
+            $0.menu = self.buildMenu()
+            $0.showsMenuAsPrimaryAction = true
+            $0.setImage(ellipsisImage, for: .normal)
+        }
         view.addSubview(button)
         NSLayoutConstraint.activate([
             button.centerXAnchor.constraint(equalTo: view.centerXAnchor),

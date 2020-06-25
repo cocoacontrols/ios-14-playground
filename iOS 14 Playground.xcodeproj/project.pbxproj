@@ -13,6 +13,7 @@
 		93CD4F1E24A42B5000FA3D48 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F1D24A42B5000FA3D48 /* RootController.swift */; };
 		93CD4F2024A432CA00FA3D48 /* MenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */; };
 		93CD4F2324A5009400FA3D48 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */; };
+		93CD4F2524A517F900FA3D48 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2424A517F900FA3D48 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		93CD4F1D24A42B5000FA3D48 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
 		93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusViewController.swift; sourceTree = "<group>"; };
 		93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
+		93CD4F2424A517F900FA3D48 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				93CD4F1424A42ABB00FA3D48 /* LaunchScreen.storyboard */,
 				93CD4F1724A42ABB00FA3D48 /* Info.plist */,
 				93CD4F1D24A42B5000FA3D48 /* RootController.swift */,
+				93CD4F2424A517F900FA3D48 /* Helpers.swift */,
 			);
 			path = "iOS 14 Playground";
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				93CD4F0A24A42AB800FA3D48 /* AppDelegate.swift in Sources */,
 				93CD4F2024A432CA00FA3D48 /* MenusViewController.swift in Sources */,
 				93CD4F1E24A42B5000FA3D48 /* RootController.swift in Sources */,
+				93CD4F2524A517F900FA3D48 /* Helpers.swift in Sources */,
 				93CD4F2324A5009400FA3D48 /* ColorPickerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
