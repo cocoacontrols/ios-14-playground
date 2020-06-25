@@ -14,6 +14,7 @@
 		93CD4F2024A432CA00FA3D48 /* MenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */; };
 		93CD4F2324A5009400FA3D48 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */; };
 		93CD4F2524A517F900FA3D48 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2424A517F900FA3D48 /* Helpers.swift */; };
+		93CD4F2724A51E7400FA3D48 /* DatePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2624A51E7400FA3D48 /* DatePickerController.swift */; };
 		93CD4F2A24A51E9B00FA3D48 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2924A51E9B00FA3D48 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusViewController.swift; sourceTree = "<group>"; };
 		93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		93CD4F2424A517F900FA3D48 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		93CD4F2624A51E7400FA3D48 /* DatePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerController.swift; sourceTree = "<group>"; };
 		93CD4F2924A51E9B00FA3D48 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +78,7 @@
 			children = (
 				93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */,
 				93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */,
+				93CD4F2624A51E7400FA3D48 /* DatePickerController.swift */,
 			);
 			path = PickersMenusActions;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				93CD4F2024A432CA00FA3D48 /* MenusViewController.swift in Sources */,
 				93CD4F2A24A51E9B00FA3D48 /* BaseController.swift in Sources */,
 				93CD4F1E24A42B5000FA3D48 /* RootController.swift in Sources */,
+				93CD4F2724A51E7400FA3D48 /* DatePickerController.swift in Sources */,
 				93CD4F2524A517F900FA3D48 /* Helpers.swift in Sources */,
 				93CD4F2324A5009400FA3D48 /* ColorPickerController.swift in Sources */,
 			);

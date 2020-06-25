@@ -90,15 +90,19 @@ class RootController: UIViewController, UICollectionViewDelegate {
         let headerItem = Item(title: "Pickers, Menus, and Actions")
         sectionSnapshot.append([headerItem])
 
-        let menusItem = Item(title: "Menus") {
-            self.navigationController?.pushViewController(MenusViewController(), animated: true)
-        }
-
         let colorPickerItem = Item(title: "Color Picker") {
             self.navigationController?.pushViewController(ColorPickerController(), animated: true)
         }
 
-        let items = [menusItem, colorPickerItem]
+        let datePickerItem = Item(title: "Date Picker") {
+            self.navigationController?.pushViewController(DatePickerController(), animated: true)
+        }
+
+        let menusItem = Item(title: "Menus") {
+            self.navigationController?.pushViewController(MenusViewController(), animated: true)
+        }
+
+        let items = [colorPickerItem, datePickerItem, menusItem]
         sectionSnapshot.append(items, to: headerItem)
         sectionSnapshot.expand([headerItem])
         dataSource.apply(sectionSnapshot, to: 0)
