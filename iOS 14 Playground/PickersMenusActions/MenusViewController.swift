@@ -7,11 +7,9 @@
 
 import UIKit
 
-final class MenusViewController: UIViewController {
+final class MenusViewController: BaseController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .systemBackground
 
         let ellipsisImage = UIImage(systemName: "ellipsis.circle")
 

@@ -7,12 +7,10 @@
 
 import UIKit
 
-final class ColorPickerController: UIViewController, UIColorPickerViewControllerDelegate {
+final class ColorPickerController: BaseController, UIColorPickerViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Color Picker"
-        view.backgroundColor = .systemBackground
-
 
         if outerStackView.superview == nil {
             view.addSubview(outerStackView)

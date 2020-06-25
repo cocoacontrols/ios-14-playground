@@ -14,6 +14,7 @@
 		93CD4F2024A432CA00FA3D48 /* MenusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */; };
 		93CD4F2324A5009400FA3D48 /* ColorPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */; };
 		93CD4F2524A517F900FA3D48 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2424A517F900FA3D48 /* Helpers.swift */; };
+		93CD4F2A24A51E9B00FA3D48 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CD4F2924A51E9B00FA3D48 /* BaseController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		93CD4F1F24A432CA00FA3D48 /* MenusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenusViewController.swift; sourceTree = "<group>"; };
 		93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerController.swift; sourceTree = "<group>"; };
 		93CD4F2424A517F900FA3D48 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		93CD4F2924A51E9B00FA3D48 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,13 @@
 		93CD4F0824A42AB800FA3D48 /* iOS 14 Playground */ = {
 			isa = PBXGroup;
 			children = (
+				93CD4F2824A51E8800FA3D48 /* Helpers */,
 				93CD4F2124A5008200FA3D48 /* PickersMenusActions */,
 				93CD4F0924A42AB800FA3D48 /* AppDelegate.swift */,
 				93CD4F1224A42ABB00FA3D48 /* Assets.xcassets */,
 				93CD4F1424A42ABB00FA3D48 /* LaunchScreen.storyboard */,
 				93CD4F1724A42ABB00FA3D48 /* Info.plist */,
 				93CD4F1D24A42B5000FA3D48 /* RootController.swift */,
-				93CD4F2424A517F900FA3D48 /* Helpers.swift */,
 			);
 			path = "iOS 14 Playground";
 			sourceTree = "<group>";
@@ -76,6 +78,15 @@
 				93CD4F2224A5009400FA3D48 /* ColorPickerController.swift */,
 			);
 			path = PickersMenusActions;
+			sourceTree = "<group>";
+		};
+		93CD4F2824A51E8800FA3D48 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				93CD4F2424A517F900FA3D48 /* Helpers.swift */,
+				93CD4F2924A51E9B00FA3D48 /* BaseController.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +160,7 @@
 			files = (
 				93CD4F0A24A42AB800FA3D48 /* AppDelegate.swift in Sources */,
 				93CD4F2024A432CA00FA3D48 /* MenusViewController.swift in Sources */,
+				93CD4F2A24A51E9B00FA3D48 /* BaseController.swift in Sources */,
 				93CD4F1E24A42B5000FA3D48 /* RootController.swift in Sources */,
 				93CD4F2524A517F900FA3D48 /* Helpers.swift in Sources */,
 				93CD4F2324A5009400FA3D48 /* ColorPickerController.swift in Sources */,
