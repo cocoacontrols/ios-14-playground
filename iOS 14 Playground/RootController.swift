@@ -89,10 +89,16 @@ class RootController: UIViewController, UICollectionViewDelegate {
         var sectionSnapshot = NSDiffableDataSourceSectionSnapshot<Item>()
         let headerItem = Item(title: "Pickers, Menus, and Actions")
         sectionSnapshot.append([headerItem])
+
         let menusItem = Item(title: "Menus") {
             self.navigationController?.pushViewController(MenusViewController(), animated: true)
         }
-        let items = [menusItem]
+
+        let colorPickerItem = Item(title: "Color Picker") {
+            self.navigationController?.pushViewController(ColorPickerController(), animated: true)
+        }
+
+        let items = [menusItem, colorPickerItem]
         sectionSnapshot.append(items, to: headerItem)
         sectionSnapshot.expand([headerItem])
         dataSource.apply(sectionSnapshot, to: 0)
