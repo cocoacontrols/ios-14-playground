@@ -12,12 +12,12 @@ These samples correspond to the following WWDC 2020 sessions:
 
 ### UIMenus on UIButtons and UIBarButtonItems
 
-<table>
+<table width="100%">
     <tr>
-        <td width="200">
+        <td style='white-space: nowrap;'>
             <img src="screenshots/uimenu.png" width="200" alt="UIMenus on UIButtons">
         </td>
-        <td>
+        <td width="99%" valign="top">
             Add menus to `UIButton`s and `UIBarButtonItem`s by assigning a `UIMenu` object to those controls' `menu` property. By default, menus will appear after a long press on the button. You can also immediately show a menu by setting the `UIButton` property `showsMenuAsPrimaryAction` to `true`, or by not setting a primary action on `UIBarButtonItem`.
         </td>
     </tr>
