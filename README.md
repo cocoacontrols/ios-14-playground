@@ -12,12 +12,12 @@ These samples correspond to the following WWDC 2020 sessions:
 
 ### UIMenus on UIButtons and UIBarButtonItems
 
-<table width="100%">
+<table>
     <tr>
-        <td style='white-space: nowrap;'>
+        <td width="200">
             <img src="screenshots/uimenu.png" width="200" alt="UIMenus on UIButtons">
         </td>
-        <td width="99%" valign="top">
+        <td width="1000">
             Add menus to `UIButton`s and `UIBarButtonItem`s by assigning a `UIMenu` object to those controls' `menu` property. By default, menus will appear after a long press on the button. You can also immediately show a menu by setting the `UIButton` property `showsMenuAsPrimaryAction` to `true`, or by not setting a primary action on `UIBarButtonItem`.
         </td>
     </tr>
@@ -30,7 +30,7 @@ These samples correspond to the following WWDC 2020 sessions:
         <td width="200">
             <img src="screenshots/color-picker.jpg" width="200" alt="Color Picker">
         </td>
-        <td>
+        <td width="1000">
             A built-in color picker view controller. In this demo, selecting a color in the color picker view controller changes the background color of its delegate view controller.
         </td>
     </tr>
@@ -44,7 +44,7 @@ These samples correspond to the following WWDC 2020 sessions:
         <td width="200">
             <img src="screenshots/datepicker.png" width="200" alt="UIDatePicker improvements.">
         </td>
-        <td>
+        <td width="1000">
             The UIDatePicker control has received a major upgrade in iOS 14.
         </td>
     </tr>
